@@ -1,6 +1,6 @@
 /* VARIÁVEIS DA PALETA DE CORES LIGHT-MODE */
 :root,
-:root[data-theme='light'] {
+:root[data-theme="light"] {
     --primary-color: #1a1b41;
     --primary-bg-color: #e6ecf5;
     --secondary-bg-color: #d8dff1;
@@ -12,7 +12,7 @@
 }
 
 /* VARIÁVEIS DA PALETA DE CORES DARK-MODE */
-:root[data-theme='dark'] {
+:root[data-theme="dark"] {
     --primary-color: #f2f2f2;
     --primary-bg-color: #1a1c29;
     --secondary-bg-color: #252837;
@@ -29,7 +29,6 @@
     padding: 0;
     box-sizing: border-box;
     vertical-align: baseline;
-    list-style: none;
     font-family: "Poppins", sans-serif;
 }
 
@@ -37,23 +36,31 @@
 
 body {
     background-color: var(--primary-bg-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
+}
+
+.ap-logo {
+    transform: scale(1.3);
+    filter: invert(1);
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'League Spartan', sans-serif;
+    font-family: "League Spartan", sans-serif;
     text-transform: uppercase;
     color: var(--contrast-color);
+    font-weight: 200;
 }
 
 h1 {
     font-size: 2.25rem;
-    font-weight: 200;
     line-height: 3rem;
+}
 
-
+h2 {
+    font-size: 2rem;
+    text-align: center;
 }
 
 b {
@@ -63,21 +70,23 @@ b {
 
 p {
     font-size: 1.25rem;
-    text-align: left;
+    text-align: justify;
 }
 
 i {
     color: var(--link-color);
 }
 
+/* ESTILIZAÇÕES DO HEADER */
 .header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     padding: 0.5rem 1rem;
     background-color: var(--menu-bg-color);
+    z-index: 10;
 }
 
 .header__toggle {
@@ -92,6 +101,9 @@ i {
 
 #toggle-theme {
     font-size: 1.5rem;
+    color: var(--link-color);
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
 }
 
 a {
@@ -103,8 +115,10 @@ a {
     align-items: center;
 }
 
+/* ESTILIZAÇÕES DO MENU */
 .menu__item {
     width: 100%;
+    list-style: none;
 }
 
 .menu--mobile {
@@ -114,6 +128,7 @@ a {
     justify-content: space-between;
     background-color: var(--menu-bg-color);
     border-top: 1px solid var(--link-color);
+    z-index: 10;
 }
 
 .menu--mobile .menu__link {
@@ -155,9 +170,14 @@ a {
     gap: 1rem;
 }
 
+/* ESTILIZAÇÃO DA HOME */
 .container {
     display: flex;
     flex-direction: column;
+}
+
+.container,
+.projects {
     padding: 2.5rem 1rem;
 }
 
@@ -170,6 +190,7 @@ a {
 
 .social-menu {
     gap: 1rem;
+    list-style: none;
 }
 
 .social-menu__icon {
@@ -180,12 +201,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .625rem;
+    gap: 0.625rem;
     width: 100%;
     background-color: transparent;
+    border: none;
     border-radius: 3.125rem;
-    padding: .875rem 1rem;
-    transition: ease-in-out .2s;
+    padding: 0.625rem;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    color: var(--primary-color);
 }
 
 .button span,
@@ -196,7 +220,7 @@ a {
 
 button:hover {
     transform: scale(1.05);
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.2s;
 }
 
 .button--primary span {
@@ -214,6 +238,97 @@ button:hover {
     padding: 0 1rem;
 }
 
+/* ESTILIZAÇÃO ICONES TECNOLOGIAS */
+
+.technologies__list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    list-style: none;
+}
+
+.technologies__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    aspect-ratio: 1/1;
+    background-color: var(--secondary-bg-color);
+    filter: brightness(1.1);
+    border: 1px solid var(--primary-color);
+    border-radius: 50rem;
+}
+
+.technologies__logo {
+    height: 2.4rem;
+}
+
+/* ESTILIZAÇÃO DA SECÃO PROJETOS */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__cover {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__cover img {
+    max-width: 430px;
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card__list {
+    margin-left: 1rem;
+}
+
+.card__description {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.card__buttons .button--project {
+    width: 110%;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* ESTILIZAÇÃO DO FOOTER */
 footer {
     display: fixed;
     margin-bottom: 0;
@@ -222,7 +337,7 @@ footer {
 }
 
 footer p {
-    font-size: .875rem;
+    font-size: 0.875rem;
     text-align: center;
 }
 
@@ -231,9 +346,8 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--link-color)
+    color: var(--link-color);
 }
-
 
 /* CONFIGURAÇÕES PARA TELAS ACIMA DE 768px */
 
@@ -242,7 +356,7 @@ footer a:hover {
         position: fixed;
         top: 0;
         border-bottom: 1px solid var(--link-color);
-        padding: .5rem 4rem;
+        padding: 0.5rem 4rem;
     }
 
     .menu--mobile {
@@ -266,13 +380,8 @@ footer a:hover {
     }
 
     .button {
-        width: 25%;
+        width: 25vw;
     }
-
-    /* .about-img img {
-        max-width: 100%;
-
-    } */
 
     h1 {
         max-width: 80vw;
@@ -280,14 +389,44 @@ footer a:hover {
         line-height: 120%;
     }
 
+    h2 {
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+        margin-bottom: 2rem;
+    }
+
     .main__content1 {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        padding: 6rem 6rem 4rem 6rem;
     }
 
+    .main__content1,
+    .projects {
+        padding: 6rem 2rem 4rem 2rem;
+    }
 
+    .projects h2 {
+        font-size: 3.5rem;
+    }
+
+    .card__cover {
+        max-width: 100%;
+    }
+
+    .card__title {
+        font-size: 2.25rem;
+    }
+
+    .card__description,
+    .card__item {
+        font-size: 1.25rem;
+    }
+
+    /* .about-img img {
+        max-width: 100%;
+
+    } */
 }
 
 /* CONFIGURAÇÕES PARA TELAS ACIMA DE 1400px */
@@ -300,5 +439,40 @@ footer a:hover {
     h1 {
         font-size: 4.5rem;
         line-height: 120%;
+    }
+
+    .main__content1,
+    .projects {
+        padding: 6rem 6rem 4rem 6rem;
+    }
+
+    .card_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .card__cover {
+        max-width: 55%;
+    }
+
+    .projects__card {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .projects__card.container--reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .technologies__list {
+        justify-content: flex-start;
+    }
+
+    .card__buttons {
+        justify-content: flex-start;
+        gap: 2rem;
     }
 }
