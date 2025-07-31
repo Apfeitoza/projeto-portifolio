@@ -35,4 +35,41 @@ O portfólio foi pensado como um currículo online moderno e responsivo, onde ap
 ---
 
 ## 📁 Organização do Código
+📂 assets
+┣ 📂 css
+┃ ┗ 📄 styles.css
+┣ 📂 images
+┃ ┗ ... imagens do projeto
+┣ 📂 js
+┃ ┗ 📄 script.js
+📄 index.html
+
+---
+
+## 🚀 Como rodar localmente
+
+1. Clone este repositório:
+git clone https://github.com/Apfeitoza/nomedoseurepositorio.git
+2. Abra o arquivo `index.html` em qualquer navegador.
+
+---
+
+## 👩‍💻 Sobre Mim
+
+Sou uma profissional em transição de carreira, formada em Direito e Design, atualmente estudando Análise e Desenvolvimento de Sistemas. Estou me especializando em Front-End, com foco em criar interfaces criativas, acessíveis e funcionais.
+
+📬 [LinkedIn](https://www.linkedin.com/in/ana-paula-feitoza-56aa73131/)  
+📸 [Instagram](https://www.instagram.com/knutzzy/)  
+💻 [GitHub](https://github.com/Apfeitoza)
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License**. Sinta-se à vontade para usar como base de estudos ou inspiração, mas por favor, não copie diretamente sem modificações significativas. 💜
+
+---
+
+
+
 
