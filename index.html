@@ -24,9 +24,9 @@
 </head>
 
 <body>
+
     <header class="header">
         <nav class="header__nav">
-
             <ul class="menu menu--desktop">
                 <li class="menu__item">
                     <a class="menu__link active" href="#home">
@@ -34,23 +34,23 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#home">
+                    <a class="menu__link" href="#sobre">
                         <span class="menu__text">Sobre</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#home">
+                    <a class="menu__link" href="#trajetoria">
                         <span class="menu__text">Trajetória</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#home">
+                    <a class="menu__link" href="#contato">
                         <span class="menu__text">Contato</span>
                     </a>
                 </li>
             </ul>
-
         </nav>
+
         <div class="header__logo logo--mobile">
             <img class="ap-logo" src="assets/images/favicon_io/android-chrome-192x192.png" alt="LOGO APFEITOZA">
 
@@ -58,7 +58,6 @@
         <div class="header__toggle">
             <i id="toggle-theme" class="bi bi-moon-stars"></i>
         </div>
-
     </header>
 
     <nav class="navigator">
@@ -70,19 +69,19 @@
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#home">
+                <a class="menu__link" href="#sobre">
                     <i class="menu__icon bi bi-emoji-smile-fill"></i>
                     <span class="menu__text">Sobre</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#home">
+                <a class="menu__link" href="#trajetoria">
                     <i class="menu__icon bi bi-mortarboard-fill"></i>
                     <span class="menu__text">Trajetória</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#home">
+                <a class="menu__link" href="#contato">
                     <i class="menu__icon bi bi-chat-square-heart-fill"></i>
                     <span class="menu__text">Contato</span>
                 </a>
@@ -91,7 +90,7 @@
     </nav>
 
     <main class="container">
-        <section class="main__content1">
+        <section id="home" class="main__content1">
             <h1>Transformando experiências em soluções, <b>com atenção aos detalhes que fazem a diferença.</b></h1>
 
             <p>Oi! Eu sou a Ana! Profissional em transição de carreira para tecnologia. Sou formada em Direito e
@@ -121,7 +120,6 @@
                     <i class="bi bi-arrow-down-right"></i>
                 </button>
             </a>
-
         </section>
 
         <section id="projetos" class="projects">
@@ -140,7 +138,6 @@
                             <li>Imagem inicial exibida antes do clique</li>
                             <li>Tratamento básico de erros na requisição</li>
                         </ul>
-
                         <ul class="technologies__list">
                             <li class="technologies__item">
                                 <img src="assets/images/tech-icons/HTML5.svg" alt="Logo do Html"
@@ -167,11 +164,10 @@
                                     <span>Repositório</span>
                                 </button>
                             </a>
-
                         </div>
-
                     </div>
                 </div>
+
                 <div class="projects__card container--reverse">
                     <img class="card__cover" src="assets/images/projects/memory-game.png"
                         alt="Case do mini projeto de Gatinhos com API">
@@ -183,7 +179,6 @@
                             <li>Botão para reiniciar o jogo</li>
                             <li>Cartões responsivos quando virados corretamente</li>
                         </ul>
-
                         <ul class="technologies__list">
                             <li class="technologies__item">
                                 <img src="assets/images/tech-icons/HTML5.svg" alt="Logo do Html"
@@ -210,22 +205,118 @@
                                     <span>Repositório</span>
                                 </button>
                             </a>
-
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="about">
-            <div class="about-img">
-                <img src="assets/images/1728994764686.jpg" alt="Imagem de perfil Ana Paula Feitoza">
+        <section id="sobre" class="about">
+            <div class="about__content1">
+                <h2>Sobre Mim</h2>
+                <div class="content_1">
+                    <div class="img__container">
+                        <img class="about-img" src="assets/images/1728994764686.jpg"
+                            alt="Imagem de perfil Ana Paula Feitoza">
+                    </div>
+                    <div class="p_containers">
+                        <div class="about__description p_1">
+                            <p>Oi! Eu sou a Ana Paula — estudante de Análise e Desenvolvimento de Sistemas, curiosa
+                                profissional em transição de carreira, entusiasta de tecnologia, leitora compulsiva e
+                                viciada em café
+                                (ok, esse último é opcional… mas real).
+                            </p>
+                        </div>
+                        <div class="about__description p_2">
+                            <p>Minha história começa no Direito, passa por uma paixão inesperada por Design Gráfico, até
+                                chegar ao ponto onde tudo fez sentido: a programação. Foi amor à primeira tag. Hoje,
+                                estou mergulhada
+                                no mundo do desenvolvimento, aprendendo, testando, errando (bastante) e evoluindo todos
+                                os dias com
+                                muito entusiasmo.
+                            </p>
+                        </div>
+                        <div class="about__description p_3">
+                            <p>
+                                Trabalho há 8 anos como Assistente Administrativa nas áreas de Departamento Pessoal e
+                                Financeiro. Lido com folha de pagamento, eSocial, notas fiscais, relatórios, burocracias
+                                em
+                                geral…
+                                Acredite: isso me treinou bem para lidar com bugs com paciência e persistência.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_2">
+                    <div class="about__description">
+                        <p>
+                            Sou movida a desafios, adoro entender como as coisas funcionam e não me contento com o
+                            superficial. Se você está lendo isso, espero que encontre aqui não só meu progresso técnico,
+                            mas também a
+                            paixão genuína por estar construindo algo novo e significativo.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section id="trajetoria" class="about">
+            <div class="about__content2">
+                <h2>Trajetória</h2>
+                <div class="info_container">
 
+                    <div class="academic__info">
+                        <h3>Formação Acadêmica</h3>
+                        <ul class="academic_list">
+                            <li class="academic_item">Tecnologia em Análise e Desenvolvimento de Sistemas – Uninter
+                                (2025 – em andamento)</li>
+                            <li class="academic_item">Tecnologia em Design Gráfico – Uninter (2023 – 2025)</li>
+                            <li class="academic_item">Bacharelado em Direito – Fundação Educacional do Município de
+                                Assis (2012 – 2016)</li>
+                        </ul>
+                        <p>Além disso, estou participando de bootcamps práticos e intensivos, como:</p>
+                        <ul class="academic_list">
+                            <li class="academic_item">Santander Bootcamp – Front-End 2025 | DIO</li>
+                            <li class="academic_item">Bootcamp Hi Happy – Front-End do Zero | DIO</li>
+                        </ul>
+                        <p>
+                            Foco atual: consolidar meus conhecimentos em HTML, CSS, JavaScript e seguir explorando
+                            Python com carinho. Sempre de olho em boas práticas, acessibilidade, semântica e, claro,
+                            criando interfaces bonitas e funcionais.
+                        </p>
+                    </div>
+                    <div class="professional__info">
+                        <h3>Experiência Profissional</h3>
+                        <p>Atualmente, sou responsável por:</p>
+                        <ul class="professional_skills">
+                            <li class="professional_item">
+                                Folha de pagamento e benefícios;
+                            </li>
+                            <li class="professional_item">
+                                Organização de exames, licenças e processos trabalhistas;
+                            </li>
+                            <li class="professional_item">
+                                Lançamento de notas fiscais, pagamentos, transferências;
+                            </li>
+                            <li class="professional_item">
+                                Conciliação bancária e emissão de NF;
+                            </li>
+                            <li class="professional_item">
+                                Conhecimento básico em eSocial e guias trabalhistas.
+                            </li>
+                        </ul>
+                        <p>Essa bagagem me trouxe organização, resiliência, atenção aos detalhes e uma baita autonomia.
+                            Todas essas habilidades têm sido muito úteis no meu dia a dia como estudante e
+                            desenvolvedora em construção.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
     </main>
 
     <footer>

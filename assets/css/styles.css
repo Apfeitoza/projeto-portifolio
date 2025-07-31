@@ -32,7 +32,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* ESTILIZAÇÕES DA PÁGINA */
+/* ESTILIZAÇÕES GERAIS DA PÁGINA */
 
 body {
     background-color: var(--primary-bg-color);
@@ -51,6 +51,7 @@ h3 {
     text-transform: uppercase;
     color: var(--contrast-color);
     font-weight: 200;
+    padding: 1rem;
 }
 
 h1 {
@@ -177,7 +178,8 @@ a {
 }
 
 .container,
-.projects {
+.projects,
+.about {
     padding: 2.5rem 1rem;
 }
 
@@ -318,6 +320,7 @@ button:hover {
     gap: 1rem;
     width: 100%;
 }
+
 .card__buttons .button--project {
     width: 110%;
 }
@@ -326,6 +329,76 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO SOBRE */
+
+.about__content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content_1 {
+    display: flex;
+    flex-direction: column;
+    gap: inherit
+}
+
+.content_2 {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+.p_containers {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+.about__description p {
+    font-size: 1rem;
+}
+
+.img__container {
+    align-self: center;
+}
+
+.about-img {
+    width: 40vw;
+    border-radius: 50%;
+}
+
+/* ESTILIZAÇÃO DA ÁREA TRAJETÓRIA */
+
+.about__content2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+.academic__info,
+.professional__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.academic__info h3,
+.professional__info h3 {
+    align-self: center;
+}
+
+.academic_list,
+.professional_skills {
+    padding-left: 3rem;
+    line-height: 1.7;
 }
 
 /* ESTILIZAÇÃO DO FOOTER */
@@ -423,15 +496,14 @@ footer a:hover {
         font-size: 1.25rem;
     }
 
-    /* .about-img img {
-        max-width: 100%;
-
-    } */
+    .about-img {
+        max-width: 25vw;
+    }
 }
 
-/* CONFIGURAÇÕES PARA TELAS ACIMA DE 1400px */
+/* CONFIGURAÇÕES PARA TELAS ACIMA DE 1200px */
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .header {
         padding: 1rem 12rem;
     }
@@ -442,7 +514,8 @@ footer a:hover {
     }
 
     .main__content1,
-    .projects {
+    .projects,
+    .about {
         padding: 6rem 6rem 4rem 6rem;
     }
 
@@ -452,6 +525,7 @@ footer a:hover {
         justify-content: flex-end;
         align-items: flex-start;
     }
+
     .card__cover {
         max-width: 55%;
     }
@@ -474,5 +548,21 @@ footer a:hover {
     .card__buttons {
         justify-content: flex-start;
         gap: 2rem;
+    }
+
+    .content_1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content_1 {
+        align-self: self-end;
+    }
+
+    .info_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
