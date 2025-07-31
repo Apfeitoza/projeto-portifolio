@@ -24,7 +24,7 @@
 </head>
 
 <body>
-
+    <!-- Seção header com menus de navegação em telas acima de 768px -->
     <header class="header">
         <nav class="header__nav">
             <ul class="menu menu--desktop">
@@ -59,7 +59,7 @@
             <i id="toggle-theme" class="bi bi-moon-stars"></i>
         </div>
     </header>
-
+    <!-- Navegador para telas mobile -->
     <nav class="navigator">
         <ul class="menu menu--mobile">
             <li class="menu__item">
@@ -88,8 +88,9 @@
             </li>
         </ul>
     </nav>
-
+    <!-- Seção do conteúdo da página -->
     <main class="container">
+        <!-- Conteúdo da home -->
         <section id="home" class="main__content1">
             <h1>Transformando experiências em soluções, <b>com atenção aos detalhes que fazem a diferença.</b></h1>
 
@@ -121,6 +122,8 @@
                 </button>
             </a>
         </section>
+
+        <!-- Seção de Projetos adjacente à homepage -->
 
         <section id="projetos" class="projects">
             <h2>Projetos</h2>
@@ -210,7 +213,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- Seção sobre mim -->
         <section id="sobre" class="about">
             <div class="about__content1">
                 <h2>Sobre Mim</h2>
@@ -259,7 +262,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- Seção referente às habilidades acadêmico-profissionais -->
         <section id="trajetoria" class="about">
             <div class="about__content2">
                 <h2>Trajetória</h2>
@@ -314,32 +317,38 @@
 
             </div>
         </section>
-
+        <!-- Formulário de contato não funcional -->
         <section id="contato">
             <h2>Contato</h2>
+            <p>Entre em contato comigo através das redes sociais, ou me mande uma mensagem abaixo!</p>
             <div class="contact_container">
-                <p>Entre em contato comigo através das redes sociais, ou me mande uma mensagem abaixo!</p>
-                <div class="form_container">
-                    <form action="" class="form_contato">
-                        <label for="name">Nome:</label>
-                        <input placeholder="Digite seu nome" type="text" id="nome" name="user_name">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="user_mail">
-                        <label placeholder="Digite o email" for="message">Mensagem:</label>
-                        <textarea placeholder="Digite sua Mensagem!" name="message" id="mensagem"></textarea>
-                    </form>
-                </div>
+                <form action="" class="form_contato">
+                    <label for="nome">Nome:</label>
+                    <input placeholder="Digite seu nome" type="text" id="nome" name="user_name">
 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_mail" placeholder="Digite o email">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea placeholder="Digite sua mensagem!" cols="30" rows="10" name="message"
+                        id="mensagem"></textarea>
+
+                    <button class="button button--primary button--form">
+                        <span>Enviar Mensagem</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                </form>
             </div>
         </section>
     </main>
-
+    <!-- Footer com identificação do desenvolvedor -->
     <footer>
         <p>
             © 2025. Todos os Direitos Reservados. Ana Paula Feitoza. Desenvolvido por <a
                 href="https://github.com/Apfeitoza">Apfeitoza.</a>
         </p>
     </footer>
+    <!-- Script para o toggle que alterna os modos light e dark da página -->
     <script src="assets/js/script.js"></script>
 </body>
 

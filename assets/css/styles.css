@@ -101,6 +101,7 @@ i {
     height: 3rem;
 }
 
+/* Estilização do Toggle */
 #toggle-theme {
     font-size: 1.5rem;
     color: var(--link-color);
@@ -122,7 +123,7 @@ a {
     width: 100%;
     list-style: none;
 }
-
+/* Estilizações do menu mobile */
 .menu--mobile {
     width: 100vw;
     position: fixed;
@@ -141,7 +142,7 @@ a {
     padding: 0.5rem 1rem;
     grid-area: 0.5rem;
 }
-
+/* Estilizações gerais do menu */
 .menu__icon,
 .menu__text {
     color: var(--link-color);
@@ -199,7 +200,7 @@ a {
 .social-menu__icon {
     font-size: 1.5rem;
 }
-
+/* Estilizações dos botões em geral */
 .button {
     display: flex;
     align-items: center;
@@ -284,10 +285,6 @@ button:hover {
     object-position: center;
 }
 
-.card__cover img {
-    max-width: 430px;
-}
-
 .projects__container {
     display: flex;
     flex-direction: column;
@@ -343,7 +340,7 @@ button:hover {
 .content_1 {
     display: flex;
     flex-direction: column;
-    gap: inherit
+    gap: inherit;
 }
 
 .content_2 {
@@ -411,12 +408,64 @@ button:hover {
 }
 
 /* ESTILIZAÇÃO DO FORMULARIO */
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    gap: 2rem;
+}
 
+#contato p {
+    font-size: 1rem;
+}
+
+.contact_container {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--secondary-bg-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form_contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form_contato input,
+.form_contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.45rem;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+.form_contato input::placeholder,
+.form_contato textarea::placeholder {
+    color: var(--link-color);
+}
+
+.button--form {
+    align-self: center;
+    width: 200px;
+}
+.button--form span {
+    font-size: 1rem;
+}
 
 /* ESTILIZAÇÃO DO FOOTER */
 footer {
-    display: fixed;
-    margin-bottom: 0;
+    margin-bottom: 4rem;
     padding: 1.2rem;
     background-color: var(--secondary-bg-color);
 }
@@ -511,6 +560,10 @@ footer a:hover {
     .about-img {
         max-width: 25vw;
     }
+
+    footer {
+        margin-bottom: 0;
+    }
 }
 
 /* CONFIGURAÇÕES PARA TELAS ACIMA DE 1200px */
@@ -531,7 +584,7 @@ footer a:hover {
         padding: 6rem 6rem 4rem 6rem;
     }
 
-    .card_body {
+    .card__body {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -567,9 +620,6 @@ footer a:hover {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-
-    .content_1 {
         align-self: self-end;
     }
 
